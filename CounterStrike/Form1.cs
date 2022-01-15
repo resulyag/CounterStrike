@@ -25,6 +25,7 @@ namespace CounterStrike
             Envanter.MyWeapons[2] = new Pompali("SuperPoze", false);
             Envanter.MyWeapons[3] = new Makinali("Uzi", true);
             Envanter.MyWeapons[4] = new Roket("Ares1", false);
+            Envanter.MyWeapons[5] = new Fuze("Tank Savar", true);
             pictureBox1.Image = Envanter.SilahDegis(1);
             Form1_KeyPress(this, new KeyPressEventArgs('2'));
             this.Focus();

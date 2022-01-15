@@ -31,7 +31,7 @@ namespace CounterStrike
                 case 5:
                     return Image.FromFile(@"..\..\Resimler\KF1500.jpg");
                 case 6:
-                    return Image.FromFile(@"..\..\Resimler\RGP.jpg");
+                    return Image.FromFile(@"..\..\Resimler\RPG.jpg");
                 default:
                     return Image.FromFile(@"..\..\Resimler\Knife.jpg");
             }

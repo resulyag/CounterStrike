@@ -39,7 +39,6 @@
             this.btnAtesEt = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.lblsayigirinUyari = new System.Windows.Forms.Label();
             this.groupBoxSarjor = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxKesiciler.SuspendLayout();
@@ -53,6 +52,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(12, 41);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(587, 265);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -157,16 +157,6 @@
             this.progressBar1.Size = new System.Drawing.Size(135, 34);
             this.progressBar1.TabIndex = 4;
             // 
-            // lblsayigirinUyari
-            // 
-            this.lblsayigirinUyari.AutoSize = true;
-            this.lblsayigirinUyari.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblsayigirinUyari.Location = new System.Drawing.Point(185, 9);
-            this.lblsayigirinUyari.Name = "lblsayigirinUyari";
-            this.lblsayigirinUyari.Size = new System.Drawing.Size(261, 20);
-            this.lblsayigirinUyari.TabIndex = 5;
-            this.lblsayigirinUyari.Text = "Lütfen 1 ile 6 arasında bir sayı giriniz";
-            // 
             // groupBoxSarjor
             // 
             this.groupBoxSarjor.Controls.Add(this.pictureBox2);
@@ -183,7 +173,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 501);
             this.Controls.Add(this.groupBoxSarjor);
-            this.Controls.Add(this.lblsayigirinUyari);
             this.Controls.Add(this.groupBoxAtesliler);
             this.Controls.Add(this.groupBoxKesiciler);
             this.Controls.Add(this.pictureBox1);
@@ -199,7 +188,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBoxSarjor.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -216,7 +204,6 @@
         private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.Button btnAtesEt;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Label lblsayigirinUyari;
         private System.Windows.Forms.GroupBox groupBoxSarjor;
     }
 }

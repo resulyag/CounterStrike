@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,7 +23,18 @@ namespace CounterStrike
         }
         public override string Doldur()
         {
-            return "";
+            if (this.MermiAdet<this.MAxMermiSayisi)
+            {
+                SoundPlayer sp = new SoundPlayer();
+                sp.SoundLocation = this.AudioPathReload;
+                sp.Play();
+                this.MermiAdet = this.MAxMermiSayisi;
+                return "Füze fırlatılmaya hazır";
+            }
+            else
+            {
+                return "Füze zaten dolu";
+            }
         }
     }
 }
